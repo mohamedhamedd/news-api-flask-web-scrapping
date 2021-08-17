@@ -36,8 +36,9 @@ def getNews(search_query):
 #Search
 @app.route('/news/everything/', methods=['GET'])
 def searchEndPoint():
-    search_query = request.args.get('q') # /news/everything/?q=MESSI
-    searchList = {'data':getNews(search_query)}
+    search_query = request.args.get('q') # /news/everything/?q=Mohamed salah
+    newsList = getNews(search_query)
+    searchList = {'total_results':len(newsList),'query':search_query,'data':newsList}
     return json.dumps(searchList)
 
 if __name__ == '__main__':
