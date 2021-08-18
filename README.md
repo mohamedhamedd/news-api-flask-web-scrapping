@@ -1,5 +1,5 @@
 # About
-It's a simple Flask-API that scrap google news site and gets the news. You can search for any specific news or filter with any past hour/day/week/year, READ Documentation for more info
+It's a simple Flask-API that scrap google news site and gets the news. You can search for any specific news and filter with source and with any past hour/day/week/year, READ Documentation.
 
 # Requirements
 ```
